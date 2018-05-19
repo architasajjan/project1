@@ -9,9 +9,7 @@
   <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.0/umd/popper.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js"></script>
   
-   <script="jv.js">
-
-</script>
+ 
   
   
   <style>
@@ -33,11 +31,11 @@
     text-align: center;
     
 }
-    h5{
+    h2{
       color:orange
     }
    
-    h6{
+    h4{
       color:grey
     }
     
@@ -92,7 +90,7 @@
    <h2><a id="about">ABOUT</a></h2>
    <br>
    
-   <h6>EDUCATION</h6><br>
+   <h4>EDUCATION</h6><br>
    NATIONAL INSTITUTE OF TECHNOLOGY KARNATAKA, SURATHKAL
    BACHELOR OF TECHNOLOGY<br>
    2017-present
@@ -106,7 +104,15 @@
    <br><br>
    
    <h2><a id="projects">PROJECTS</a></h2>
-   <a href="#!" onclick="myFunction()">CLICK TO VIEW THE PROJECTS</a>
+   <button type="button" onclick="myFunction()" class="btn btn-secondary">click to load the list </button>
+
+<p id="demo">SMPs</p>
+
+<script>
+function myFunction() { 
+    document.getElementById("demo").innerHTML = "1.web-app development(IEEE) <br> 2.polymer materials(IEEE) <br> 3.stock market analysis(ISTE) <br> 4.marketing(ISTE) <br> 5.macroeconomics(ACM)";
+}
+</script>
    
   
   
